@@ -1,0 +1,6 @@
+[submodule "eiffel-submodule-1"]
+	path = layers/eiffel-submodule-1
+	url = ../eiffel-submodule-1.git
+[submodule "eiffel-submodule-2"]
+	path = layers/eiffel-submodule-2
+	url = ../eiffel-submodule-2.git
