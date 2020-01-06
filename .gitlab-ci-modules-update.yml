@@ -1,0 +1,14 @@
+stages:
+  - update
+
+update:
+  stage: update
+  only:
+    variables:
+      - $UPDATE_MODULES
+  script:
+    - env
+    - git submodule update --remote
+    - git add -A
+    - git commit -m "Update submodules on CLM event id: $CLM_ID"
+    - git push
