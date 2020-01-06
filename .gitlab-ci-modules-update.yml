@@ -6,6 +6,8 @@ update:
   only:
     variables:
       - $UPDATE_MODULES
+  tags:
+    - docker_runner
   script:
     - env
     - git submodule update --remote
