@@ -10,6 +10,7 @@ update:
     - docker_runner
   script:
     - env
+    - git submodule update --init
     - git submodule update --remote
     - git status
     - git add -A
