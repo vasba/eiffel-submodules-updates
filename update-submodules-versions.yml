@@ -1,0 +1,13 @@
+stages:
+  - update
+
+update:
+  stage: update
+  only:
+    variables: 
+      - $update
+  script:
+    - git submodule update --remote
+    - git add -A
+    - git commit -m "update all submodules"
+    - git push
